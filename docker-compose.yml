@@ -12,5 +12,5 @@ services:
       - ./pb_public:/pb/pb_public
       - ./pb_migrations:/pb/pb_migrations
     environment:
-      - PB_ENCRYPTION_KEY={PB_ENCRYPTION_KEY}
+      - PB_ENCRYPTION_KEY=
     command: ["/pb/pocketbase", "serve", "--http=0.0.0.0:8090", "--encryptionEnv=PB_ENCRYPTION_KEY"]
