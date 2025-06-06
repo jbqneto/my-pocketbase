@@ -13,5 +13,5 @@ services:
       - ./pb_migrations:/pb/pb_migrations
     environment:
       - PB_ENCRYPTION_KEY=
-      - PB_MAX_BODY_SIZE=
-    command: ["/pb/pocketbase", "serve", "--http=0.0.0.0:8090", "--encryptionEnv=PB_ENCRYPTION_KEY", "--maxBodySizeEnv=PB_MAX_BODY_SIZE"]
+      - PB_MAX_BODY_SIZE=500000000
+    command: ["/pb/pocketbase", "serve", "--http=0.0.0.0:8090", "--encryptionEnv=PB_ENCRYPTION_KEY"]
