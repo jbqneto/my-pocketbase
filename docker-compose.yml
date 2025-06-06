@@ -14,4 +14,4 @@ services:
     environment:
       - PB_ENCRYPTION_KEY=
       - PB_MAX_BODY_SIZE=
-    command: ["/pb/pocketbase", "serve", "--http=0.0.0.0:8090", "--encryptionEnv=PB_ENCRYPTION_KEY"]
+    command: ["/pb/pocketbase", "serve", "--http=0.0.0.0:8090", "--encryptionEnv=PB_ENCRYPTION_KEY", "--maxBodySizeEnv=PB_MAX_BODY_SIZE"]
